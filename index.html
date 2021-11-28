@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1</title>
+    <link rel='stylesheet' type='text/css' href='index.css'>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="data-box">
+            <div class="piker-box">
+                <div>
+                    <div>
+                        <span>x:&#160;</span><span class="value" id="data-x"></span>
+                    </div>
+                    <div>
+                        <span>y:&#160;</span><span class="value" id="data-y"></span>
+                    </div>
+                    <div>
+                        <span>dec color:&#160;</span><span class="value" id="data-color"></span>
+                    </div>
+                    <div>
+                        <span>hex color:&#160;</span><span class="value" id="data-hex-color"></span>
+                    </div>
+                </div>
+
+                <div id="piker-color"></div>
+            </div>
+
+            <div class="inputs">
+                <div id="inputW">
+                    <label>width</label>
+                    <input type="range" min="100" max="800" step="10">
+                    <span></span>
+                </div>
+
+                <div id="inputH">
+                    <label>height</label>
+                    <input type="range" min="100" max="800" step="10">
+                    <span></span>
+                </div>
+
+                <div id="inputXmin">
+                    <label>X min</label>
+                    <input type="range" min="-255" max="255" step="1">
+                    <span></span>
+                </div>
+
+                <div id="inputXmax">
+                    <label>X max</label>
+                    <input type="range" min="-255" max="255" step="1">
+                    <span></span>
+                </div>
+
+                <div id="inputSize">
+                    <label>size</label>
+                    <input type="range" min="0" max="1" step=".001">
+                    <span></span>
+                </div>
+
+                <div id="inputRpos">
+                    <label>R pos</label>
+                    <input type="range" min="0" max="1" step=".001">
+                    <span></span>
+                </div>
+
+                <div id="inputGpos">
+                    <label>G pos</label>
+                    <input type="range" min="0" max="1" step=".001">
+                    <span></span>
+                </div>
+
+                <div id="inputBpos">
+                    <label>B pos</label>
+                    <input type="range" min="0" max="1" step=".001">
+                    <span></span>
+                </div>
+
+                <div id="inputTiled">
+                    <label>tiled</label>
+                    <div>
+                        <input type="checkbox">
+                    </div>
+                </div>
+
+                <div id="inputTileX">
+                    <label>tile x</label>
+                    <input type="range" min="1" max="100" step="1">
+                    <span></span>
+                </div>
+
+                <div id="inputTileY">
+                    <label>tile y</label>
+                    <input type="range" min="1" max="100" step="1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div>
+        <canvas id="graph_R"></canvas>
+        <canvas id="graph_G"></canvas>
+        <canvas id="graph_B"></canvas>
+        <canvas id="gamma"></canvas>
+    </div>
+
+    <script src="init.js"></script>
+    <script src="drawing.js"></script>
+    <script src="piker.js"></script>
+    <script src="inputs.js"></script>
+</body>
+
+</html>

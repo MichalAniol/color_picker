@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('font/Rubik-Regular.eot');
+    src: local('open sans extralight'), local('open-sans-extralight'), url('font/Rubik-Regular.eot?#iefix') format('embedded-opentype'), url('font/Rubik-Regular.woff2') format('woff2'), url('font/Rubik-Regular.woff') format('woff'), url('font/Rubik-Regular.ttf') format('truetype'), url('font/Rubik-Regular.svg#Barlow') format('svg');
+}
+
+:root {
+    --color_1: #006600;
+    --color_2: #001600;
+    --color_3: #000800;
+    --color_back: black;
+    --font: 'Rubik', sans-serif
+}
+
+body {
+    margin: 10px;
+    padding: 0;
+    background-color: var(--color_back);
+    color: var(--color_1);
+    font-family: var(--font);
+    font-size: 20px;
+}
+
+#canvas {
+    cursor: crosshair;
+}
+
+.value {
+    font-size: 40px;
+}
+
+.wrap {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.data-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    width: 625px;
+}
+
+.piker-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#piker-color {
+    width: 180px;
+    height: 180px;
+    border: 3px solid var(--color_1);
+}
+
+.inputs {
+    font-size: 25px;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 3px solid var(--color_1);
+}
+
+.inputs>div>input {
+    width: 400px;
+}
+
+.inputs div {
+    display: flex;
+}
+
+.inputs label {
+    width: 100px;
+}
+
+.inputs span {
+    margin-left: 20px;
+    width: 100px;
+}
+
+.inputs div:nth-child(3),
+.inputs div:nth-child(5),
+.inputs div:nth-child(9) {
+    margin-top: 20px;
+}
